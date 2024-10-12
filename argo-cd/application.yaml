@@ -1,21 +1,21 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: dummy-webapp-production
+  name: dummy-webapp-development
   namespace: argocd
   annotations:
-    argocd-image-updater.argoproj.io/image-list: webapp=algomaster99/dummy-webapp:prod
+    argocd-image-updater.argoproj.io/image-list: webapp=algomaster99/dummy-webapp:dev
     argocd-image-updater.argoproj.io/update-strategy: digest
     argocd-image-updater.argoproj.io/write-back-method: git
 spec:
   project: default
   source:
     repoURL: https://github.com/algomaster99/dummyWeb-ArgoCDk8s.git
-    targetRevision: main
+    targetRevision: dev
     path: manifests/
   destination:
     server: https://kubernetes.default.svc
-    namespace: dummy-webapp-production
+    namespace: dummy-webapp-development
   syncPolicy:
     automated:
       prune: true

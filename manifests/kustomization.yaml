@@ -5,4 +5,4 @@ resources:
 
 images:
   - name: algomaster99/dummy-webapp
-    newTag: "prod"
+    newTag: "dev"
