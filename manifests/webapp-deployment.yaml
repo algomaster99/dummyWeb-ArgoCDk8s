@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: webapp
-        image: noizysthlm/dummy-webapp:prod
+        image: algomaster99/dummy-webapp:prod
         ports:
         - containerPort: 5000

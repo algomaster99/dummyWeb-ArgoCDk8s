@@ -4,13 +4,13 @@ metadata:
   name: dummy-webapp-production
   namespace: argocd
   annotations:
-    argocd-image-updater.argoproj.io/image-list: webapp=noizysthlm/dummy-webapp:prod
+    argocd-image-updater.argoproj.io/image-list: webapp=algomaster99/dummy-webapp:prod
     argocd-image-updater.argoproj.io/update-strategy: digest
     argocd-image-updater.argoproj.io/write-back-method: git
 spec:
   project: default
   source:
-    repoURL: https://github.com/noizy-sthlm/dummyWeb-ArgoCDk8s.git
+    repoURL: https://github.com/algomaster99/dummyWeb-ArgoCDk8s.git
     targetRevision: main
     path: manifests/
   destination:

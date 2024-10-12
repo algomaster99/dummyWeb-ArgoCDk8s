@@ -4,5 +4,5 @@ resources:
   - webapp-service.yaml
 
 images:
-  - name: noizysthlm/dummy-webapp
+  - name: algomaster99/dummy-webapp
     newTag: "prod"
