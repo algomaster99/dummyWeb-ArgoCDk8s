@@ -1,0 +1,3 @@
+kustomize:
+  images:
+  - algomaster99/dummy-webapp@sha256:63ae41fcdc0161c8126a23299b3bb7ec715052784959ceeacc8f96944f33f40e
